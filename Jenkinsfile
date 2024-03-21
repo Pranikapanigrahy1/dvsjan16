@@ -1,14 +1,16 @@
 pipeline {
     agent any
     stages {
-            stage("welcome to dvs") {
-                steps {
-                    script {
-                        var1=44
-                        var2="sameekshya"
-                        println "myvar1 value is ${var1} and myvar2 value is ${var2}"
-                    }
+        stage ("welcome to dvs") {
+            steps {
+                script {
+                    var1=44
+                    var2="sameekshya"
+                    println "myvar1 value is ${var1} and myvar2 value is ${var2}"
+                    println "my workspace is ${WORKSPACE}"
+                    println "my build number is ${BUILD_NUMBER}"
                 }
             }
         }
+    }
 }
