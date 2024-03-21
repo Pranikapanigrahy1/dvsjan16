@@ -7,10 +7,10 @@ pipeline {
                     a=10
                     b=20
                     if ( $a > b) {
-                        println "$a is big"
+                        println "${a} is big"
                     }
                     else {
-                        println "$b is big"
+                        println "${b} is big"
                     }
                }
             }
