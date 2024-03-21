@@ -6,11 +6,11 @@ pipeline {
                 script {
                         a=10
                         b=20
-                    if ( $a > b) {
-                        println "${a} is big"
+                        if ( $a > b) {
+                            println "${a} is big"
                     }
-                    else {
-                        println "${b} is big"
+                        else {
+                            println "${b} is big"
                     }
                }
             }
